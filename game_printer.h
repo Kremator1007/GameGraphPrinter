@@ -6,7 +6,7 @@
 
 enum class VictoryStates { winning, losing, unknown };
 
-std::map<VictoryStates, std::string> victory_state_to_string{
+inline std::map<VictoryStates, std::string> victory_state_to_string{
     {VictoryStates::winning, "W"},
     {VictoryStates::losing, "L"},
     {VictoryStates::unknown, "unknown"}};
