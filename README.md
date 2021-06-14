@@ -8,7 +8,7 @@ To make use of this repository:
 ```
     std::string GameState::to_string() const
     static VictoryStates Game::check_winning_conditions()
-    static std::vector<GameState> generate_states(GameState)
+    static std::vector<GameState> generate_states(GameState const&)
 ```
 Please be wary of the fact that the following assumptions are made:
 - Your methods' implementations don't mutate any global state; otherwise the behavior is not well-defined
